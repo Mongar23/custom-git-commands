@@ -1,0 +1,11 @@
+#!/bin/bash
+
+merging_branch=$(git rev-parse --abbrev-ref HEAD)
+
+git checkout ${2:-development}
+git merge --no-ff ${1:-$merging_branch} -m "merged '${1:-$merging_branch}' into ${2:-development}"
+
+git push origin ${2:-development}
+
+git branch -d ${1:-$merging_branch}
+git push origin -d ${1:-$merging_branch}

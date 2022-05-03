@@ -5,9 +5,9 @@ Use with caution they don't have any fail saves (yet)!
 
 ## Table of Contents
 - [Usage](#usage)
- - [Linux bash](#linux_bash)
- - [Windows MINGW64](#windows_mingw64)
- - [Windows GitKraken](#windows_gitkraken)
+ - [Linux bash](#linux-bash)
+ - [Windows MINGW64](#windows-mingw64)
+ - [Windows GitKraken](#windows-gitkraken)
 - [Commands](#commands)
 	- [git-remote-branch](#git-remote-branch)
 	- [git-commit-push](#git-commit-push)
@@ -27,8 +27,12 @@ For a one time use case type `export PATH=<PATH_TO_REPOSITORY>:$PATH` in the ter
 To make it perminent navigate to `C:\Users\<USER_NAME>` add `export PATH=<PATH_TO_REPOSITORY>:$PATH` to the `.bash_profile`. if the `.bash_profile` file doens't exists, create it.
 
 ### Windows GitKraken
-Adding the commands to the GitKraken terminal on Windows takes quite some digging, for as far as tested the change can only be made perminently. 
-Navigate to the GitKraken install location which is the the `C:\Users\<USER_NAME>\AppData\Local\gitkraken` folder. Once there navigate to `app-<CURRENT_VERSION>\resources\app.asar.unpacked\resources\cli\win\GKPrompt` and add `$env:Path += ";<PATH_TO_REPOSITORY>"` to the top of the `Prompt` function. 
+In linux using the commands in the gitkraken terminal is simple it just uses the `.bashrc` file like explained in[Linux bash](#linux-bash). Adding the commands to the GitKraken terminal on Windows however, takes quite some digging, for as far as tested the change can only be made perminently. 
+Navigate to the terminal config file which is located in this folder: 
+```
+C:\Users\<USER_NAME>\AppData\Local\gitkraken\app-<CURRENT_VERSION>\resources\app.asar.unpacked\resources\cli\win\GKPrompt
+```
+Edit the `GKPrompt.psm1` file, and add `$env:Path += ";<PATH_TO_REPOSITORY>"` to the top of the `Prompt` function.
 
 ## Commands
 

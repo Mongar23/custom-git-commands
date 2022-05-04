@@ -61,6 +61,7 @@ The second argument is the branch where the merging branch is merged into, it ha
 git delete-branch <BRANCH_TO_DELETE> <CHECKOUT_BRANCH:development>
 ```
 This will checkout to `CHECKOUT_BRANCH`, delete `BRANCH_TO_DELETE` locally, push to the origin of `BRANCH_TO_DELETE` with the `-d` flag, to delete it remotely.
+The second argument is the branch which is checkedout, it has a default value of `development`.
 
 ## TODO
 - [ ] Test and add fail saves to the `git-finish-branch` command.

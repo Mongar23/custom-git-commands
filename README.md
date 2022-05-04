@@ -5,9 +5,9 @@ Use with caution they don't have any fail saves (yet)!
 
 ## Table of Contents
 - [Usage](#usage)
- - [Linux bash](#linux-bash)
- - [Windows MINGW64](#windows-mingw64)
- - [Windows GitKraken](#windows-gitkraken)
+	- [Linux bash](#linux-bash)
+	- [Windows MINGW64](#windows-mingw64)
+	- [Windows GitKraken](#windows-gitkraken)
 - [Commands](#commands)
 	- [git-remote-branch](#git-remote-branch)
 	- [git-commit-push](#git-commit-push)
